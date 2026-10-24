@@ -8,13 +8,36 @@
 </head>
 <body>
     
-    <header>
-    <h1>LOJA STREET</h1>
+    <header class="cabecalho-loja">
+   <img src="imagem/Logo.png" alt="Logo Loja Street">
 
-    <p>Informação 1</p>
+    <form class="barra-pesquisa">
+        <input
+            type="search"
+            name="busca"
+            placeholder="Buscar..."
+            aria-label="Buscar produtos">
 
-    <p>Informação 2</p>
-    </header>
+        <button type="submit" aria-label="Pesquisar">
+            <span>⌕</span>
+        </button>
+    </form>
+
+   <div class="acoes-cabecalho">
+
+    <a href="#conta" class="acao-loja">
+        <img src="imagem/perfil.png" alt="Perfil" class="icone">
+        <span>Perfil</span>
+    </a>
+
+    <a href="#carrinho" class="acao-loja">
+        <img src="imagem/carrinho.png" alt="Carrinho" class="icone">
+        <span>Carrinho</span>
+    </a>
+
+</div>
+
+</header>
 
     <section class="menu">
     <p>CAMISETAS</p>
@@ -28,34 +51,44 @@
     <div>
         <h2>SEU ESTILO SUA ATITUDE</h2>
     
-        <p>Seu estilo é sua identidade. Nós somos oque vestimos e pensando nisso criamos as melhores pessas pra você montar seu proprio street.</p>
+        <p> Muito mais do que roupas, o streetwear é uma forma de expressar quem você é.
+           Nossa loja nasceu da paixão pela moda urbana, trazendo peças que combinam
+           atitude, conforto e personalidade. Aqui você encontra camisetas, calças,
+           tênis, moletons e acessórios para criar combinações autênticas e construir
+           seu próprio estilo. Vista o que representa você, explore novas possibilidades e mostre sua identidade em cada detalhe.</p>
 
     </div>
 
     <div>
-        <img src="imagem/Solidão Urbana sob Céu Nublado.png" alt="Roupa streetwear">
+        <img src="imagem/foto ilustrativa.png" alt="Roupa streetwear">
     </div>
 
 </section>
+
 
 <section class="destaques">
     <h2>O QUE DEFINE NOSSO ESTILO</h2>
 
     <div class="itens-destaque">
-        <div>
+
+        <div class="item-destaque">
+            <img src="imagem/qualidade.jpg" alt="Textura de tecido preto">
             <h3>Qualidade</h3>
-            <p>Descrição sobre a qualidade dos produtos.</p>
+            <p>Trabalhamos com peças desenvolvidas para acompanhar sua rotina, priorizando a resistência, o conforto e a durabilidade. Cada detalhe é pensado para oferecer roupas que mantenham sua qualidade no uso diário, sem abrir mão de um visual moderno e cheio de personalidade.</p>
         </div>
 
-        <div>
+        <div class="item-destaque">
+            <img src="imagem/tecido.jpg" alt="Detalhe de tecido preto">
             <h3>Tecidos</h3>
-            <p>Descrição sobre os tecidos das roupas.</p>
+            <p>Escolhemos tecidos que combinam conforto, qualidade e estilo, valorizando cada peça com diferentes texturas e acabamentos. Nossa proposta é oferecer materiais que proporcionem uma boa experiência ao vestir, permitindo criar combinações versáteis para diferentes ocasiões, sempre mantendo a essência da moda urbana.</p>
         </div>
 
-        <div>
+        <div class="item-destaque">
+            <img src="imagem/modelagem.jpg" alt="Modelo usando roupa streetwear preta">
             <h3>Modelagens</h3>
-            <p>Descrição sobre os caimentos e cortes das peças.</p>
+            <p>Nossas modelagens são inspiradas na cultura streetwear, com cortes modernos e caimentos que valorizam a identidade de cada peça. Buscamos oferecer opções que facilitem a criação de diferentes combinações, permitindo misturar camisetas, calças, moletons e acessórios para montar um visual autêntico e expressar sua personalidade.</p>
         </div>
+
     </div>
 </section>
 
@@ -64,6 +97,42 @@
 
     <p>Descubra novas possibilidades e encontre um visual que combine com você.</p>
 
+    <a href="#contato">FALE COM A GENTE</a>
+</section>
+
+<section class="localizacao">
+    <h2>ONDE ESTAMOS</h2>
+    <div class="conteudo-localizacao">
+        <div>
+            <img src="imagem/Mapa de Antônio Olinto – PR.png" alt="Mapa mostrando onde esta nossa loja">
+        </div>
+
+        <div class="informacoes-localizacao">
+            <h3>VENHA NOS CONHECER</h3>
+            <p>Endereço: Lago da Cruz</p>
+            <p>Cidade: Antônio Olinto - PR</p>
+            <p>Venha nos conhecer pessoalmentte.</p>
+        </div>
+    </div>
+</section>
+
+<section class="perguntas">
+    <h2>PERGUNTAS FREQUENTES</h2>
+
+    <details>
+        <summary>Quanto tempo demora para a entrega?</summary>
+        <p>O prazo de entrega depende da localização do cliente e da forma de envio escolhida.</p>
+    </details>
+
+    <details>
+        <summary>Como funciona o reembolso?</summary>
+        <p>Em caso de cancelamento ou devolução, entre em contato com a loja para receber orientações sobre o processo de reembolso.</p>
+    </details>
+
+    <details>
+        <summary>Como escolher o tamanho ideal?</summary>
+        <p>Confira as informações de tamanho presente em cada peça antes de escolher seu produto, para encontrar a opção mais adequada para você.</p>
+    </details>
 </section>
 
 <footer>

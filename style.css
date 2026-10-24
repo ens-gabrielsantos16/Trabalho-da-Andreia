@@ -11,7 +11,81 @@ header {
     padding: 20px;
     border-bottom: solid 2px #1677FF;
 }
- 
+
+header img {
+    width: 200px;
+    height: auto;
+}
+
+.acao-loja {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.cabecalho-loja img.icone {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+.acoes-cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.cabecalho-loja {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    border-bottom: solid 2px #1677FF;
+}
+
+.cabecalho-loja img {
+    width: 180px;
+    height: auto;
+}
+
+.barra-pesquisa {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    height: 45px;
+    background-color: white;
+    border: solid 2px #1677FF;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.barra-pesquisa input {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.barra-pesquisa button {
+    width: 50px;
+    height: 100%;
+    background-color: #1677FF;
+    color: white;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.barra-pesquisa button:hover {
+    background-color: #11467a;
+}
+
 .menu {
     display: flex;
     justify-content: space-around;
@@ -37,62 +111,515 @@ header {
 }
 
 .principal h2 {
-    font-size: 40px;
-    color: #1677FF;
-    line-height: 1.5;
-
+    font-size: 42px;
+    color: #1c67b2;
 }
-.principal p{
-    width: 450px;
+
+.principal p {
+    font-size: 20px;
+    line-height: 1.8;
+    max-width: 600px;
+    width: 100%;
 }
 
 footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
     text-align: center;
     padding: 20px;
     border-top: solid 2px #1677FF;
-    color: #11467a;
+    color: #1677FF;
+}
+
+.destaques {
+    background-color: #050505;
+    padding: 25px 20px;
+    margin: 20px 25px;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.destaques h2 {
+    color: #1677FF;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.itens-destaque {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.item-destaque {
+    width: 33%;
+}
+
+.item-destaque img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.item-destaque img:hover {
+    transform: scale(1.04);
+}
+
+.item-destaque h3 {
+    color: #1677FF;
+    font-size: 20px;
+}
+
+.item-destaque p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 
+.chamada {
+    background-color: #0d2942;
+    text-align: center;
+    padding: 25px 20px;
+    margin: 15px;
+    border-radius: 15px;
+}
 
+.chamada h2 {
+    color: #1677FF;
+    font-size: 30px;
+}
+
+.chamada p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.chamada a {
+    display: inline-block;
+    background-color: #1677FF;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+}
+
+.localizacao {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.localizacao h2 {
+    color: #1677FF;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.conteudo-localizacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.conteudo-localizacao img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.informacoes-localizacao {
+    text-align: left;
+    padding: 20px;
+}
+
+.informacoes-localizacao h3 {
+    color: #1677FF;
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+.informacoes-localizacao p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+.perguntas {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.perguntas h2 {
+    color: #1677FF;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.perguntas details {
+    background-color: #0d2942;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.perguntas summary {
+    color: #1677FF;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.perguntas details p {
+    font-size: 16px;
+    line-height: 1.6;
+}
 
 @media screen and (max-width: 768px) {
-    h1 {
-        font-size: 25px;
+
+    .cabecalho-loja {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
     }
 
-    h2 {
-        font-size: 20px;
+    .cabecalho-loja img:not(.icone) {
+        width: 160px;
+        height: auto;
     }
 
-    p {
+    .barra-pesquisa {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .acoes-cabecalho {
+        gap: 25px;
+    }
+
+    .acao-loja {
+        font-size: 17px;
+    }
+
+    .cabecalho-loja img.icone {
+        width: 22px;
+        height: 22px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px 20px;
+        padding: 5px 15px;
+    }
+
+    .menu p {
         font-size: 14px;
     }
 
     .principal {
         flex-direction: column;
         text-align: center;
+        padding: 30px 20px;
+        gap: 25px;
     }
+
+    .principal h2 {
+        font-size: 32px;
+    }
+
+    .principal p {
+        font-size: 17px;
+        line-height: 1.7;
+        width: 100%;
+    }
+
+    .principal img {
+        width: 80%;
+        max-width: 500px;
+        height: auto;
+    }
+
+    .destaques {
+        margin: 20px 15px;
+        padding: 30px 20px;
+    }
+
+    .destaques h2 {
+        font-size: 24px;
+    }
+
+    .itens-destaque {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .item-destaque {
+        width: 85%;
+    }
+
+    .item-destaque img {
+        width: 100%;
+        height: 230px;
+    }
+
+    .chamada {
+        margin: 15px;
+        padding: 30px 20px;
+    }
+
+    .chamada h2 {
+        font-size: 25px;
+    }
+
+    .chamada p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .localizacao {
+        padding: 30px 20px;
+    }
+
+    .localizacao h2 {
+        font-size: 26px;
+    }
+
+    .conteudo-localizacao {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .conteudo-localizacao img {
+        width: 100%;
+        max-width: 550px;
+        height: auto;
+    }
+
+    .informacoes-localizacao {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .informacoes-localizacao h3 {
+        font-size: 24px;
+    }
+
+    .informacoes-localizacao p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .perguntas {
+        padding: 30px 20px;
+    }
+
+    .perguntas h2 {
+        font-size: 26px;
+    }
+
+    .perguntas summary {
+        font-size: 17px;
+    }
+
+    .perguntas details p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 20px 35px;
+        padding: 20px;
+    }
+
 }
 
 
-
-
 @media screen and (max-width: 425px) {
-    h1 {
-        font-size: 20px;
+    
+    .cabecalho-loja {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
     }
 
-    header p {
-        display: none;
+    .cabecalho-loja img:not(.icone) {
+        width: 160px;
+        height: auto;
+    }
+
+    .barra-pesquisa {
+        width: 100%;
+        max-width: 350px;
+        height: 40px;
+    }
+
+    .barra-pesquisa input {
+        font-size: 14px;
+    }
+
+    .acoes-cabecalho {
+        gap: 25px;
+    }
+
+    .acao-loja {
+        font-size: 16px;
+    }
+
+    .cabecalho-loja img.icone {
+        width: 22px;
+        height: 22px;
     }
 
     .menu {
         flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px 18px;
+        padding: 5px 10px;
+    }
+
+    .menu p {
+        font-size: 13px;
+        margin: 8px 0;
+    }
+
+    .principal {
+        flex-direction: column;
+        text-align: center;
+        padding: 25px 15px;
+        gap: 20px;
+    }
+
+    .principal h2 {
+        font-size: 25px;
+    }
+
+    .principal p {
+        font-size: 15px;
+        line-height: 1.7;
+        width: 100%;
     }
 
     .principal img {
-        width: 250px;
-        height: 300px;
+        width: 100%;
+        max-width: 300px;
+        height: auto;
     }
+
+    .destaques {
+        margin: 15px 10px;
+        padding: 25px 15px;
+    }
+
+    .destaques h2 {
+        font-size: 22px;
+    }
+
+    .itens-destaque {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .item-destaque {
+        width: 100%;
+    }
+
+    .item-destaque img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .item-destaque h3 {
+        font-size: 19px;
+    }
+
+    .item-destaque p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .chamada {
+        margin: 10px;
+        padding: 25px 15px;
+    }
+
+    .chamada h2 {
+        font-size: 21px;
+    }
+
+    .chamada p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .localizacao {
+        padding: 25px 15px;
+    }
+
+    .localizacao h2 {
+        font-size: 23px;
+    }
+
+    .conteudo-localizacao {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .conteudo-localizacao img {
+        width: 100%;
+        height: auto;
+    }
+
+    .informacoes-localizacao {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .informacoes-localizacao h3 {
+        font-size: 21px;
+    }
+
+    .informacoes-localizacao p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .perguntas {
+        padding: 25px 15px;
+    }
+
+    .perguntas h2 {
+        font-size: 22px;
+    }
+
+    .perguntas summary {
+        font-size: 15px;
+    }
+
+    .perguntas details p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+
+    footer {
+        flex-wrap: wrap;
+        gap: 10px 20px;
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
+
 }
